@@ -1,0 +1,4 @@
+ofxIO
+ofxJSON
+ofxPoco
+ofxSQLiteCpp
