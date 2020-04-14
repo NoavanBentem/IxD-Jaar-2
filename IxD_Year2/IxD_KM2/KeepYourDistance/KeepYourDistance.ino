@@ -1,6 +1,6 @@
-byte inBytes[1];
-const int trigPin = 9;
-const int echoPin = 10;
+
+const int trigPin = 10;
+const int echoPin = 9;
 int ledPin = 8;
 
 // defines variables
@@ -31,14 +31,10 @@ distance= duration*0.034/2;
 Serial.print("Distance: ");
 Serial.println(distance);
 
-if(Serial.available () > 0){
-  Serial.readBytes (inBytes,1);
-}
-
   if (distance < 140)
   {
     digitalWrite(ledPin, HIGH);   // sets the LED on
-    Serial.write(inBytes[1]);
+
   }  
   else
   {
