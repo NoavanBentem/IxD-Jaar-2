@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ConnectFile</title>
+</head>
+<body>
+<?php
+   $db_user = 'noavanbentem';
+   $db_pass = 'zoaFeZina0';
+   $db_host = 'localhost';
+   $db_name = 'noavanbentem';
+
+/* Open a connection */
+$mysqli = new mysqli("$db_host","$db_user","$db_pass","$db_name");
+
+/* check connection */
+if ($mysqli->connect_errno) {
+   echo "Failed to connect to MySQL: (" . $mysqli->connect_errno() . ") " . $mysqli->connect_error();
+   exit();
+}
+	
+function showerror($error,$errornr) {
+die("Error (" . $errornr . ") " . $error);
+}
+	
+?>
+</body>
+</html>
